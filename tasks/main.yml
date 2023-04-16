@@ -1,6 +1,8 @@
 ---
 - name: Configure root user account
-  tags: root
+  tags:
+   - root
+   - root_user
   become: true
   block:
     - name: Disable the account
