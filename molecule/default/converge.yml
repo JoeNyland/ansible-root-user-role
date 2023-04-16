@@ -1,0 +1,7 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include joenyland.root_user"
+      include_role:
+        name: "joenyland.root_user"

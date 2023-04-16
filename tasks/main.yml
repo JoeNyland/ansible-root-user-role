@@ -1,0 +1,9 @@
+---
+- name: Configure root user account
+  tags: root
+  become: true
+  block:
+    - name: Disable the account
+      user:
+        name: root
+        password_lock: true
